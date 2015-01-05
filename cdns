@@ -42,4 +42,3 @@ config profile 'disabled'
 	option in_netem 'loss 100%'
 	option out 'rate 1000bit'
 	option out_netem 'loss 100%'
-
