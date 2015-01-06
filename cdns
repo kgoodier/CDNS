@@ -8,6 +8,13 @@ config globals 'globals'
 	list interface 'lan'
 	list allowed_subnets '192.168.1.0/24'
 
+config profile 'brazil3g'
+	option name 'Brazil (3G)'
+	option in 'rate 1550kbit'
+	option in_netem 'delay 150ms 50ms 25% loss 1% 40%'
+	option out 'rate 460kbit'
+	option out_netem 'delay 150ms 50ms 25% loss 1% 40%'
+
 config profile 'india2g'
 	option name 'India (2G)'
 	option in 'rate 550kbit'
