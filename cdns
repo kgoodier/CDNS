@@ -5,6 +5,7 @@ config globals 'globals'
 	option max_capture_size '1M'
 	option max_capture_time '60'
 	option default_profile 'full'
+	option cloudshark_api_token '62e59ed4fb43b41e1fd2de6a79d12b92'
 	list interface 'lan'
 	list allowed_subnets '192.168.2.0/24'
 
